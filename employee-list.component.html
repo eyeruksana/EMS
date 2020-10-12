@@ -1,0 +1,31 @@
+
+<div class="background-wrap">
+    <div class="background"></div>
+   </div>
+<table *ngIf="employees">
+    <thead>
+        <tr>
+           <th>EmpID</th>
+            <th>fullname</th>
+            <th>age</th>
+            <th>city</th>
+            <th>designation</th>
+            <th>rating</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let emp of employees">
+            <td>{{emp.empID}}</td>
+            <td>{{emp.fullname}}</td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.city}}</td> 
+            <td>{{emp.designation}}</td> 
+            <td>{{emp.rating}}</td> 
+            
+        </tr>
+    </tbody>
+
+</table>
+
